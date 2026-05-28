@@ -55,7 +55,7 @@ def clean_supply_delivery_data(file_path):
     Main function to clean supply delivery dataset.
     """
     try:
-        df = pd.read_csv("E:\Agile\Assignment 2\supply_delivery_history.csv")
+        df = pd.read_csv(file_path)
 
         df = handle_missing_values(df)
         df = standardize_date_columns(df)
