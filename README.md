@@ -1,5 +1,7 @@
 # Supply Chain Analytics Pipeline
-
+### 🔗 Project Resources
+* **GitHub Repository:** [https://github.com/sagorsengupta123-coder/supply-chain-analytics]
+* **Taiga Project Board:** [https://tree.taiga.io/project/sagorsengupta123-coder-supply-chain-analytics-sprint/timeline]
 ## 👥 Group Members & Roles
 * **Sagor** – Project Manager / Scrum Master
 * **Riddhi** – Data Cleaning Specialist (`Data_Cleaning.py`)
