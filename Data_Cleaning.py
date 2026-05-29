@@ -98,6 +98,4 @@ def clean_supply_delivery_data(file_path):
 
 
 if __name__ == "__main__":
-    clean_supply_delivery_data(
-        r"C:\Users\Vrii\supply-chain-analytics\supply_delivery_history.csv"
-    )
+    clean_supply_delivery_data("supply_delivery_history.csv")
