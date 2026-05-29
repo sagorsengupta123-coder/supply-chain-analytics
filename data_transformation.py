@@ -13,9 +13,9 @@ print("\n--- Starting Data Transformation Tasks ---")
 # ==========================================================
 # TASK A: Convert Date Columns and Calculate Delivery Lead Time
 # ==========================================================
-# Changing text columns back into actual dates to calculate the delivery speed
-df['Scheduled Delivery Date'] = pd.to_datetime(df['Scheduled Delivery Date'])
-df['Delivered to Client Date'] = pd.to_datetime(df['Delivered to Client Date'])
+# Add errors='coerce' to BOTH lines to handle broken dates and "TBD" text
+df['Scheduled Delivery Date'] = pd.to_datetime(df['Scheduled Delivery Date'], errors='coerce')
+df['Delivered to Client Date'] = pd.to_datetime(df['Delivered to Client Date'], errors='coerce')
 
 # Calculate the difference in days (Actual Delivery Date minus Scheduled Date)
 df['Delivery_Lead_Time_Days'] = (df['Delivered to Client Date'] - df['Scheduled Delivery Date']).dt.days
